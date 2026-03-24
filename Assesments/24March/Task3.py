@@ -5,10 +5,6 @@
 
 from time import sleep
 from selenium.webdriver import Chrome, ChromeOptions
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.actions.wheel_input import ScrollOrigin
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 o = ChromeOptions()
 o.add_experimental_option('detach', True)
 o.add_experimental_option("prefs",{"safebrowsing.enabled":True})
