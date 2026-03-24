@@ -15,17 +15,17 @@ driver.implicitly_wait(10)
 actions = ActionChains(driver)
 
 # Scroll and hover over dropdown button
-hover_ele = driver.find_element(By.XPATH, '//button[@class="dropbtn"]')
-actions.scroll_by_amount(0, 1000).pause(2).move_to_element(hover_ele).perform()
+h1 = driver.find_element(By.XPATH, '//button[@class="dropbtn"]')
+actions.scroll_by_amount(0, 1000).pause(2).move_to_element(h1).perform()
 
 # Double click "Copy Text" button
-dbl_ele = driver.find_element(By.XPATH, '//button[text()="Copy Text"]')
-actions.pause(1).double_click(dbl_ele).perform()
+dc = driver.find_element(By.XPATH, '//button[text()="Copy Text"]')
+actions.pause(1).double_click(dc).perform()
 
 # Drag and drop operation
-drag_ele = driver.find_element(By.ID, "draggable")
-drop_ele = driver.find_element(By.ID, "droppable")
-actions.pause(2).drag_and_drop(drag_ele, drop_ele).perform()
+dd1 = driver.find_element(By.ID, "draggable")
+dd2 = driver.find_element(By.ID, "droppable")
+actions.pause(2).drag_and_drop(dd1, dd2).perform()
 
 sleep(2)
 driver.quit()
