@@ -11,11 +11,6 @@
 * Perform **double click**
 * Perform **drag and drop**
 
-### Key Concepts:
-
-* `ActionChains`
-* Element interaction
-* Advanced user gestures
 
 ---
 
@@ -33,12 +28,7 @@
 6. Select any available **size**
 7. Click **"Add to Bag"**
 
-### Key Concepts:
 
-* Hover interactions
-* Dynamic scrolling
-* Handling clickable elements
-* Product selection workflow
 
 ---
 
