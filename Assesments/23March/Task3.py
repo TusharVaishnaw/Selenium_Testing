@@ -27,12 +27,6 @@ myntra.click()
 driver.switch_to.window(driver.window_handles[1])
 print(driver.current_window_handle, driver.title, driver.current_url)
 
-# Open Cleartrip and print details
-driver.switch_to.window(driver.window_handles[0])
-driver.find_element(By.XPATH, '//a[@href="https://www.cleartrip.com/"]').click()
-driver.switch_to.window(driver.window_handles[2])
-print(driver.current_window_handle, driver.title, driver.current_url)
-
 # Open Shopsy and print details
 driver.switch_to.window(driver.window_handles[0])
 driver.find_element(By.XPATH, '//a[@href="https://www.shopsy.in"]').click()
