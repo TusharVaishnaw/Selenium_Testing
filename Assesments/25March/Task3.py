@@ -7,14 +7,13 @@ options.add_experimental_option("detach", True)
 
 driver = Chrome(options=options)
 driver.get("https://www.amazon.in/")
-driver.maximize_window()
 driver.implicitly_wait(10)
 
 driver.find_element(By.XPATH, '//input[@id="twotabsearchtextbox"]').send_keys("mobiles")
-sleep(2)
+sleep(3)
 driver.find_element(By.XPATH, '//div[@aria-rowindex="4"]').click()
 
-sleep(2)
+sleep(3)
 driver.find_element(By.XPATH, '//span[@class="a-dropdown-label"]').click()
 driver.find_element(By.XPATH, '//a[.="Newest Arrivals"]').click()
 driver.find_element(By.XPATH, '//span[.="Free Shipping"]').click()
