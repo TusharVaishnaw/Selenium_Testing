@@ -3,7 +3,7 @@ import requests
 payload = {
     "city": "jaipur",
     "country": "india",
-    "email": "tvw11z1@gmail.com",
+    "email": "tvw11x@gmail.com",
     "firstName": "tushar",
     "gender": "MALE",
     "lastName": "vw",
@@ -14,11 +14,11 @@ payload = {
 }
 
 
-# def reg_post():
-#     response = requests.post('https://www.shoppersstack.com/shopping/shoppers', json=payload, verify=False)
-#     return response.json()
-#
-# reg_post()
+def reg_post():
+    response = requests.post('https://www.shoppersstack.com/shopping/shoppers', json=payload, verify=False)
+    return response.json()
+
+reg_post()
 
 logindata={
   "email": "tvw11@gmail.com",
