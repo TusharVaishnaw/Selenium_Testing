@@ -1,0 +1,10 @@
+{
+  "item1": {
+    "productId": 51,
+    "quantity": 6
+  },
+    "item2": {
+    "productId": 55,
+    "quantity": 10
+  }
+}
